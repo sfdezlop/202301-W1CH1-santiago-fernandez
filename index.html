@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="frame">
+        <div class="calculator">
+            <div class="screen-battery" title="Battery Level"><meter id="batterylevel" min="0" max="20" value="20"
+                    low="7" high="14" optimum="20"></meter></div>
+            <div class="screen-historial" id="screenhistorial"></div>
+            <div class="screen-operation" id="screenoperation"></div>
+            <button class="button-changer" title="All clear">AC</button>
+            <button class="button-changer" title="Sign change">+/-</button>
+            <button class="button-changer" title="Convert percentage to per unit">%</button>
+            <button class="button-operator">/</button>
+            <button class="button-number">7</button>
+            <button class="button-number">8</button>
+            <button class="button-number">9</button>
+            <button class="button-operator">x</button>
+            <button class="button-number">4</button>
+            <button class="button-number">5</button>
+            <button class="button-number">6</button>
+            <button class="button-operator">-</button>
+            <button class="button-number">1</button>
+            <button class="button-number">2</button>
+            <button class="button-number">3</button>
+            <button class="button-operator">+</button>
+            <button class="button-numbercol2">0</button>
+            <button class="button-number">.</button>
+            <button class="button-equal" id="buttonequal">=</button>
+        </div>
+    </div>
+    <script src="program.js"></script>
+</body>
+
+</html>

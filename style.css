@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+    
+body {
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    background-color: white;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 25px 120px 40px repeat(5, 65px);
+    box-shadow: 5px 5px 40px 1px black;
+    border-radius: 7px 7px 7px 7px
+}
+
+.screen-historial, .screen-operation, .screen-battery {
+    grid-column: span 4;
+    flex-direction: column;
+    background-color: #363636;
+    text-align:right;
+    overflow: auto;
+}
+
+.screen-battery{
+    border-radius: 7px 7px 0px 0px ;
+    padding: 1px;
+    text-align:center;
+}
+.screen-historial{
+    padding: 10px;
+    color: white;
+}
+
+.screen-operation{
+    padding: 10px;
+    color: greenyellow;
+}
+
+.button-changer, .button-number, .button-numbercol2, .button-operator, .button-equal {
+    font-size: 1em;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #363636;
+}
+
+.button-change:active, .button-number:active, .button-numbercol2:active, .button-operator:active, .button-equal:active {
+    transform: scale(0.95);
+}
+
+.button-changer {
+    grid-column: span 1;
+    background-color: rgb(112, 112, 112);
+}
+
+.button-number {
+    grid-column: span 1;
+    background-color: rgb(173, 173, 173);
+}
+
+.button-numbercol2 {
+    grid-column: span 2;
+    background-color: rgb(173, 173, 173);
+    border-radius: 0px 0px 0px 7px ;
+}
+
+.button-operator {
+    background-color: rgba(214, 101, 9, 0.918);
+}
+
+.button-equal {
+    background-color: rgba(214, 101, 9, 0.918);
+    border-radius: 0px 0px 7px 0px ;
+}
+
